@@ -1,0 +1,3 @@
+[submodule "dependencies/torchsparse"]
+	path = dependencies/torchsparse
+	url = https://github.com/mit-han-lab/torchsparse.git
