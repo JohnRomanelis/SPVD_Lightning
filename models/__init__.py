@@ -3,6 +3,11 @@ import models.ddpm_unet_attn as ddpm_unet_attn
 import models.spvd as spvd
 from functools import partial
 
+from models.lightningBase import DiffusionBase
+
+
+__all__ = ['DiffusionBase', 'SPVD_S', 'SPVD', 'SPVD_L']
+
 # SPVD-S : 
 SPVD_S = partial(ddpm_unet_attn.SPVUnet, voxel_size=0.1, nfs=(32, 64, 128, 256), num_layers=1, attn_chans=8, attn_start=3)
 
