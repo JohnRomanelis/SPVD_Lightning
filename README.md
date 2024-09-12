@@ -95,3 +95,21 @@ pip install -e .
     
     If an error is raised in this last command, list all directories inside `build` and replace the name of the directory with the one in your system named lib.linux-x86_64-cpython-*.
 
+# Data
+
+For generation, we use the same version of ShapeNet as [PointFlow](https://github.com/stevenygd/PointFlow.git). Please refer to their instructions for downloading the dataset.
+
+# Citation
+
+If you find this work useful in your research, please consider citing:
+
+```bibtex
+@misc{romanelis2024efficientscalablepointcloud,
+      title={Efficient and Scalable Point Cloud Generation with Sparse Point-Voxel Diffusion Models}, 
+      author={Ioannis Romanelis and Vlassios Fotis and Athanasios Kalogeras and Christos Alexakos and Konstantinos Moustakas and Adrian Munteanu},
+      year={2024},
+      eprint={2408.06145},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.06145}, 
+}
