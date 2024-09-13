@@ -18,30 +18,24 @@ This repository contains the official implementation for our publication: *"Effi
 
 # Installation
 
-### 1. Set Up an Anaconda Environment
-
-We recommend using Anaconda to manage your Python environment.
-
-```bash
-conda create --name spvd python=3.9
-conda activate spvd
-```
-
-### 2. Clone the Repository (Including Submodules)
+### 1. Clone the Repository (Including Submodules)
 To clone this repository along with its submodules, use the --recursive flag:
 
 ```bash
 git clone --recursive https://github.com/JohnRomanelis/SPVD_Lightning.git
 ```
 
-### 3. Install PyTorch: 
-We have tested our code with PyTorch 2.0 and CUDA 11.8. You can install the compatible version using the following command:
+### 2. Set Up an Anaconda Environment 
 
+We recommend using Anaconda to manage your Python environment.
+We also provide an `environment.yml` to set it up. 
+
+By running the following command you will create a conda env called *spvd* containing most of the libraries required to run our code. 
 ```bash
-conda install pytorch==2.0.0 torchvision==0.15.0 torchaudio==2.0.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda env create -f environment.yml
 ```
 
-### 4. Install Torchsparse
+### 3. Install Torchsparse
 TorchSparse is now included as a submodule in the repository under the dependencies/torchsparse folder, so there is no need to clone it separately. However, you need to install system dependencies and the library itself.
 
 1. Install Google Sparse Hash:
@@ -57,7 +51,7 @@ cd dependencies/torchsparse
 pip install -e .
 ```
 
-### 5. Install Chamfer Distance and Earth Mover Distance
+### 4. Install Chamfer Distance and Earth Mover Distance
 
 - **Chamfer**:
 
